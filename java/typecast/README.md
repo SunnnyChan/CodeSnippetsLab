@@ -17,8 +17,7 @@ Long l = Long.valueOf("123");
 
 // **  String to Boolean **
 String str = "true";
-Boolean.getBoolean(str);
-
+Boolean.parseBoolean(str);  // 不区分大小写
 
 ```
 
@@ -32,7 +31,8 @@ String str = String.valueOf(100L);
 ## Boolean
 ```java
 // **  Boolean  to String **
-
+Boolean b = true;
+String str = String.valueOf(b);
 ```
 
 ## boolean
@@ -40,6 +40,5 @@ String str = String.valueOf(100L);
 // **  boolean  to String **
 boolean b = true;
 String str = String.valueOf(b);
-
 
 ```
