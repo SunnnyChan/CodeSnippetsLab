@@ -16,7 +16,8 @@ module.exports = {
         children: [
           '/java/spring/',
           '/java/log4j/',
-          '/java/typecast/'
+          '/java/typecast/',
+          '/java/code-inspect/'
         ]
       },
       {
