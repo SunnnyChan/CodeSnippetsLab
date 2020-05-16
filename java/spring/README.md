@@ -1,6 +1,8 @@
 
 # Spring
 
+## [Spring Bean](bean/)  
+
 ## Spring Boot
 
 ### application.yml  
@@ -29,7 +31,5 @@ spring.datasource.url=jdbc:mysql://aliyuncs.com:3306/database?useUnicode=true&ze
 spring.datasource.username=root
 spring.datasource.password=******
 spring.datasource.driver-class-name=com.mysql.jdbc.Driver
-``` 
-
-## [Spring Bean](bean/)  
+```
 
