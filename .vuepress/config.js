@@ -44,6 +44,12 @@ module.exports = {
         path: '/php/',      // 可选的
         collapsable: true, // 可选的, 默认值是 true,
         sidebarDepth: 1,    // 可选的, 默认值是 1
+      },
+      {
+        title: 'Lua',   // 必要的
+        path: '/lua/',      // 可选的
+        collapsable: true, // 可选的, 默认值是 true,
+        sidebarDepth: 1,    // 可选的, 默认值是 1
       }
     ]
   }
