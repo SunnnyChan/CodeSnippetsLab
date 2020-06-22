@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Lua | Code Snippets Lab</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/CodeSnippetsLab/assets/css/0.styles.198c821a.css" as="style"><link rel="preload" href="/CodeSnippetsLab/assets/js/app.8898c04a.js" as="script"><link rel="preload" href="/CodeSnippetsLab/assets/js/2.8729a11c.js" as="script"><link rel="preload" href="/CodeSnippetsLab/assets/js/14.91ee3b49.js" as="script"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/10.40d4c7a1.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/11.9acb4fa0.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/12.502cd4a1.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/13.148136fa.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/15.ff214e7f.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/16.fd4456fe.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/17.52179d58.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/18.8105e061.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/19.09b9f9a2.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/3.4de9f3f8.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/4.5f60d4ea.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/5.a69a9ae9.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/6.ba453c01.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/7.610d3049.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/8.502662dd.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/9.78d52fd5.js">
+    <link rel="stylesheet" href="/CodeSnippetsLab/assets/css/0.styles.198c821a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/CodeSnippetsLab/" class="home-link router-link-active"><!----> <span class="site-name">Code Snippets Lab</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="http://www.github.com/sunnnychan" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="http://www.github.com/sunnnychan" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/CodeSnippetsLab/java/" class="sidebar-heading clickable open"><span>Java</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/CodeSnippetsLab/java/cookbook/" class="sidebar-link">Cookbook</a></li><li><a href="/CodeSnippetsLab/java/spring/" class="sidebar-link">Spring</a></li><li><a href="/CodeSnippetsLab/java/log4j/" class="sidebar-link">log4j</a></li><li><a href="/CodeSnippetsLab/java/typecast/" class="sidebar-link">类型转换</a></li><li><a href="/CodeSnippetsLab/java/code-inspect/" class="sidebar-link">代码检测</a></li></ul></section></li><li><a href="/CodeSnippetsLab/python/" class="sidebar-link">Python</a></li><li><a href="/CodeSnippetsLab/c/" class="sidebar-link">C</a></li><li><a href="/CodeSnippetsLab/shell/" class="sidebar-link">Shell</a></li><li><a href="/CodeSnippetsLab/php/" class="sidebar-link">PHP</a></li><li><a href="/CodeSnippetsLab/lua/" class="active sidebar-link">Lua</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/CodeSnippetsLab/lua/#解析并计算字符串逻辑表达式" class="sidebar-link">解析并计算字符串逻辑表达式</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="lua"><a href="#lua" class="header-anchor">#</a> Lua</h1> <h2 id="解析并计算字符串逻辑表达式"><a href="#解析并计算字符串逻辑表达式" class="header-anchor">#</a> 解析并计算字符串逻辑表达式</h2> <div class="language-lua extra-class"><pre class="language-lua"><code><span class="token keyword">local</span> str_find <span class="token operator">=</span> string<span class="token punctuation">.</span>find
+<span class="token keyword">local</span> str_sub <span class="token operator">=</span> string<span class="token punctuation">.</span>sub
+<span class="token keyword">local</span> table_sort <span class="token operator">=</span> table<span class="token punctuation">.</span>sort
+
+<span class="token keyword">local</span> <span class="token keyword">function</span> <span class="token function">trim</span><span class="token punctuation">(</span>str<span class="token punctuation">,</span> substr<span class="token punctuation">)</span>
+    <span class="token keyword">local</span> strRet <span class="token operator">=</span> str
+    <span class="token keyword">local</span> s<span class="token punctuation">,</span> e <span class="token operator">=</span> <span class="token function">str_find</span><span class="token punctuation">(</span>strRet<span class="token punctuation">,</span> <span class="token string">'^'</span> <span class="token operator">..</span> substr <span class="token operator">..</span> <span class="token string">'+'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> s <span class="token keyword">then</span>
+        strRet <span class="token operator">=</span> <span class="token function">str_sub</span><span class="token punctuation">(</span>strRet<span class="token punctuation">,</span> e <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token keyword">end</span>
+    s<span class="token punctuation">,</span> e <span class="token operator">=</span> <span class="token function">str_find</span><span class="token punctuation">(</span>strRet<span class="token punctuation">,</span> substr <span class="token operator">..</span> <span class="token string">'+$'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> s <span class="token keyword">then</span>
+        strRet <span class="token operator">=</span> <span class="token function">str_sub</span><span class="token punctuation">(</span>strRet<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> e <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token keyword">end</span>
+    <span class="token keyword">return</span> strRet
+<span class="token keyword">end</span>
+
+<span class="token keyword">local</span> <span class="token keyword">function</span> <span class="token function">ipairsBySortedKey</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span>
+    <span class="token keyword">local</span> t_tmp <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token keyword">for</span> k <span class="token keyword">in</span> <span class="token function">pairs</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span> <span class="token keyword">do</span>
+        <span class="token keyword">if</span> <span class="token function">type</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token string">'number'</span> <span class="token keyword">then</span>
+            t_tmp<span class="token punctuation">[</span><span class="token operator">#</span>t_tmp <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> k
+        <span class="token keyword">end</span>
+    <span class="token keyword">end</span>
+    table<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span>t_tmp<span class="token punctuation">)</span>
+    <span class="token keyword">local</span> i <span class="token operator">=</span> <span class="token number">0</span>
+    <span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        i <span class="token operator">=</span> i <span class="token operator">+</span> <span class="token number">1</span>
+        <span class="token keyword">return</span> t_tmp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> t<span class="token punctuation">[</span>t_tmp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span>
+    <span class="token keyword">end</span>
+<span class="token keyword">end</span>
+
+<span class="token keyword">local</span> <span class="token keyword">function</span> <span class="token function">parseStrExpress</span><span class="token punctuation">(</span>strExpress<span class="token punctuation">)</span>
+    <span class="token comment">-- 删除表达式两端没有意义的空格</span>
+    <span class="token keyword">local</span> strExpress <span class="token operator">=</span> <span class="token function">trim</span><span class="token punctuation">(</span>strExpress<span class="token punctuation">,</span> <span class="token string">' '</span><span class="token punctuation">)</span>
+    <span class="token comment">-- 先检查表达式开始是 ! 开头，且 取反操作是针对整个表达式的</span>
+    <span class="token keyword">local</span> wholeNotFlag <span class="token operator">=</span> <span class="token keyword">false</span>
+    <span class="token keyword">local</span> checkRet <span class="token operator">=</span> strExpress<span class="token punctuation">:</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token string">'^![ ]*[(].*[)]$'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> checkRet <span class="token operator">~=</span> <span class="token keyword">nil</span> <span class="token keyword">then</span>
+        <span class="token comment">-- 如果是，置取反标识，在求出真个表达式值时取反</span>
+        wholeNotFlag <span class="token operator">=</span> <span class="token keyword">true</span>
+        <span class="token comment">-- 删除开头的 取反 符号</span>
+        strExpress <span class="token operator">=</span> strExpress<span class="token punctuation">:</span><span class="token function">sub</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token keyword">end</span>
+    strExpress <span class="token operator">=</span> <span class="token function">trim</span><span class="token punctuation">(</span>strExpress<span class="token punctuation">,</span> <span class="token string">' '</span><span class="token punctuation">)</span>
+    <span class="token comment">-- 删除表达式两段开头和结尾 成对的 括号</span>
+    <span class="token keyword">while</span> strExpress<span class="token punctuation">:</span><span class="token function">sub</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token string">'('</span> <span class="token keyword">do</span>
+        <span class="token keyword">if</span> strExpress<span class="token punctuation">:</span><span class="token function">sub</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token string">')'</span> <span class="token keyword">then</span>
+            strExpress <span class="token operator">=</span> strExpress<span class="token punctuation">:</span><span class="token function">sub</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span>
+        <span class="token keyword">else</span>
+            <span class="token function">error</span><span class="token punctuation">(</span><span class="token string">'logic express format invalid.'</span><span class="token punctuation">)</span>
+        <span class="token keyword">end</span>
+    <span class="token keyword">end</span>
+    strExpress <span class="token operator">=</span> <span class="token function">trim</span><span class="token punctuation">(</span>strExpress<span class="token punctuation">,</span> <span class="token string">' '</span><span class="token punctuation">)</span>
+    <span class="token comment">-- 找到当前表达式 第一层级 的 '|' '&amp;' 操作符</span>
+    <span class="token keyword">local</span> braceCout <span class="token operator">=</span> <span class="token number">0</span>
+    <span class="token keyword">local</span> arrIndexList <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token keyword">for</span> index <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">#</span>strExpress<span class="token punctuation">,</span> <span class="token number">1</span> <span class="token keyword">do</span>
+        <span class="token keyword">if</span> strExpress<span class="token punctuation">:</span><span class="token function">sub</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> index<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token string">'('</span> <span class="token keyword">then</span>
+            braceCout <span class="token operator">=</span> braceCout <span class="token operator">+</span> <span class="token number">1</span>
+        <span class="token keyword">elseif</span> strExpress<span class="token punctuation">:</span><span class="token function">sub</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> index<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token string">')'</span> <span class="token keyword">then</span>
+            braceCout <span class="token operator">=</span> braceCout <span class="token operator">-</span> <span class="token number">1</span>
+        <span class="token keyword">elseif</span> strExpress<span class="token punctuation">:</span><span class="token function">sub</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> index<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token string">'|'</span> <span class="token keyword">or</span> strExpress<span class="token punctuation">:</span><span class="token function">sub</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> index<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token string">'&amp;'</span> <span class="token keyword">then</span>
+            <span class="token keyword">if</span> braceCout <span class="token operator">==</span> <span class="token number">0</span> <span class="token keyword">then</span>
+                <span class="token comment">-- print(&quot;index : &quot; .. index .. ' Char : ' .. strExpress:sub(index, index))</span>
+                arrIndexList<span class="token punctuation">[</span>index<span class="token punctuation">]</span> <span class="token operator">=</span> strExpress<span class="token punctuation">:</span><span class="token function">sub</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> index<span class="token punctuation">)</span>
+            <span class="token keyword">end</span>
+        <span class="token keyword">end</span>
+    <span class="token keyword">end</span>
+    <span class="token comment">-- 如果括号不成对，表达式不合法</span>
+    <span class="token keyword">if</span> braceCout <span class="token operator">~=</span> <span class="token number">0</span> <span class="token keyword">then</span> <span class="token function">error</span><span class="token punctuation">(</span><span class="token string">'logic express format invalid.'</span><span class="token punctuation">)</span> <span class="token keyword">end</span>
+    <span class="token comment">-- 如果当前表达式中不包含 '|' '&amp;', 也不为空(为空表达式不合法),</span>
+    <span class="token comment">-- 则 表达式为 true, false, !true, !false, !(false), !(true), !(!true) 中的一种，称之为元表达式（可以直接求出值）</span>
+    <span class="token keyword">if</span> <span class="token function">next</span><span class="token punctuation">(</span>arrIndexList<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token keyword">nil</span> <span class="token keyword">then</span>
+        <span class="token keyword">if</span> strExpress <span class="token operator">==</span> <span class="token string">''</span> <span class="token keyword">then</span> <span class="token function">error</span><span class="token punctuation">(</span><span class="token string">'logic express format invalid.'</span><span class="token punctuation">)</span> <span class="token keyword">end</span>
+        <span class="token keyword">local</span> notFlag <span class="token operator">=</span> <span class="token keyword">false</span>
+        <span class="token keyword">if</span> strExpress<span class="token punctuation">:</span><span class="token function">sub</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token string">'!'</span> <span class="token keyword">then</span>
+            notFlag <span class="token operator">=</span> <span class="token keyword">true</span><span class="token punctuation">;</span>
+            strExpress <span class="token operator">=</span> strExpress<span class="token punctuation">:</span><span class="token function">sub</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+        <span class="token keyword">end</span>
+        strExpress <span class="token operator">=</span> <span class="token function">trim</span><span class="token punctuation">(</span>strExpress<span class="token punctuation">,</span> <span class="token string">' '</span><span class="token punctuation">)</span>
+        <span class="token keyword">local</span> strExpressValue <span class="token operator">=</span> <span class="token keyword">nil</span>
+        <span class="token keyword">if</span> strExpress <span class="token operator">==</span> <span class="token string">'false'</span> <span class="token keyword">then</span>
+            strExpressValue <span class="token operator">=</span> <span class="token keyword">false</span>
+        <span class="token keyword">elseif</span> strExpress <span class="token operator">==</span> <span class="token string">'true'</span> <span class="token keyword">then</span>
+            strExpressValue <span class="token operator">=</span> <span class="token keyword">true</span>
+        <span class="token keyword">else</span>
+            <span class="token function">error</span><span class="token punctuation">(</span><span class="token string">'logic express format invalid. has value not false or true : '</span> <span class="token operator">..</span> strExpress<span class="token punctuation">)</span>
+        <span class="token keyword">end</span>
+        <span class="token keyword">if</span> notFlag <span class="token keyword">then</span> strExpressValue <span class="token operator">=</span> <span class="token keyword">not</span> strExpressValue <span class="token keyword">end</span>
+        <span class="token keyword">if</span> wholeNotFlag <span class="token keyword">then</span> strExpressValue <span class="token operator">=</span> <span class="token keyword">not</span> strExpressValue <span class="token keyword">end</span>
+        <span class="token keyword">return</span> strExpressValue
+    <span class="token keyword">end</span>
+    <span class="token comment">-- 如果当前表达式不是元表达式，变量当前层级的 '|' 和 '&amp;'，按照它们来划分子表达式</span>
+    <span class="token keyword">local</span> boolRet <span class="token operator">=</span> <span class="token keyword">nil</span>
+    <span class="token keyword">local</span> k_prev<span class="token punctuation">,</span> v_prev <span class="token operator">=</span> <span class="token keyword">nil</span><span class="token punctuation">,</span> <span class="token keyword">nil</span>
+    <span class="token keyword">for</span> k<span class="token punctuation">,</span> v <span class="token keyword">in</span> <span class="token function">ipairsBySortedKey</span><span class="token punctuation">(</span>arrIndexList<span class="token punctuation">)</span> <span class="token keyword">do</span>
+        <span class="token comment">-- 求出第一个子表达式的 值</span>
+        <span class="token keyword">if</span> boolRet <span class="token operator">==</span> <span class="token keyword">nil</span> <span class="token keyword">then</span>
+            k_prev <span class="token operator">=</span> k
+            v_prev <span class="token operator">=</span> v
+            boolRet <span class="token operator">=</span> <span class="token function">parseStrExpress</span><span class="token punctuation">(</span>strExpress<span class="token punctuation">:</span><span class="token function">sub</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> k_prev <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">else</span>
+            <span class="token comment">-- 根据前一个表达式的值 和 接下来的 逻辑运算符号，来计算 这两个表达式组成的表达式的值</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>v_prev <span class="token operator">==</span> <span class="token string">'&amp;'</span> <span class="token keyword">and</span> boolRet <span class="token operator">==</span> <span class="token keyword">true</span><span class="token punctuation">)</span> <span class="token keyword">or</span> <span class="token punctuation">(</span>v_prev <span class="token operator">==</span> <span class="token string">'|'</span> <span class="token keyword">and</span> boolRet <span class="token operator">==</span> <span class="token keyword">false</span><span class="token punctuation">)</span> <span class="token keyword">then</span>
+                <span class="token comment">-- print(strExpress .. ' : ' .. strExpress:sub(k_prev + 1, k - 1))</span>
+                boolRet <span class="token operator">=</span> <span class="token function">parseStrExpress</span><span class="token punctuation">(</span>strExpress<span class="token punctuation">:</span><span class="token function">sub</span><span class="token punctuation">(</span>k_prev <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> k <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token keyword">end</span>
+            k_prev <span class="token operator">=</span> k
+            v_prev <span class="token operator">=</span> v
+        <span class="token keyword">end</span>
+    <span class="token keyword">end</span>
+    <span class="token comment">-- 求出最后一个表达式</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>v_prev <span class="token operator">==</span> <span class="token string">'&amp;'</span> <span class="token keyword">and</span> boolRet <span class="token operator">==</span> <span class="token keyword">true</span><span class="token punctuation">)</span> <span class="token keyword">or</span> <span class="token punctuation">(</span>v_prev <span class="token operator">==</span> <span class="token string">'|'</span> <span class="token keyword">and</span> boolRet <span class="token operator">==</span> <span class="token keyword">false</span><span class="token punctuation">)</span> <span class="token keyword">then</span>
+        boolRet <span class="token operator">=</span> <span class="token function">parseStrExpress</span><span class="token punctuation">(</span>strExpress<span class="token punctuation">:</span><span class="token function">sub</span><span class="token punctuation">(</span>k_prev <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">end</span>
+    <span class="token keyword">if</span> wholeNotFlag <span class="token keyword">then</span> boolRet <span class="token operator">=</span> <span class="token keyword">not</span> boolRet <span class="token keyword">end</span>
+    <span class="token keyword">return</span> boolRet
+<span class="token keyword">end</span>
+
+<span class="token comment">-- Test</span>
+<span class="token keyword">local</span> Test <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'true'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'!true'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'true|false'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'true|true'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'true&amp;false'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'true&amp;true'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'!false&amp;true'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'true&amp;!false'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token number">9</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'true&amp;!(false|false)'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'true&amp;(false|!false)'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token number">11</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'true&amp;!(false|!false)&amp;true'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token number">12</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'!false&amp;! ( true )'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token number">13</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'false|(true&amp;(!false))'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token number">14</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'false|(true&amp;(!false))|!(false)'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token number">15</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'false|(true&amp;(!false))|!(false)&amp;(false|!true)'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token number">16</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'true&amp;(true|true|true|true)'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> Test<span class="token punctuation">:</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> k<span class="token punctuation">,</span> v <span class="token keyword">in</span> <span class="token function">ipairsBySortedKey</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span> <span class="token keyword">do</span>
+        <span class="token keyword">local</span> callRet <span class="token operator">=</span> <span class="token function">parseStrExpress</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span>
+        <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">'Test '</span> <span class="token operator">..</span> k <span class="token operator">..</span> <span class="token string">' : '</span> <span class="token operator">..</span> v <span class="token operator">..</span> <span class="token string">' = '</span> <span class="token operator">..</span> <span class="token function">tostring</span><span class="token punctuation">(</span>callRet<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">end</span>
+<span class="token keyword">end</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/CodeSnippetsLab/php/" class="prev">
+        PHP
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/CodeSnippetsLab/assets/js/app.8898c04a.js" defer></script><script src="/CodeSnippetsLab/assets/js/2.8729a11c.js" defer></script><script src="/CodeSnippetsLab/assets/js/14.91ee3b49.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Shell | Code Snippets Lab</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/CodeSnippetsLab/assets/css/0.styles.198c821a.css" as="style"><link rel="preload" href="/CodeSnippetsLab/assets/js/app.8898c04a.js" as="script"><link rel="preload" href="/CodeSnippetsLab/assets/js/2.8729a11c.js" as="script"><link rel="preload" href="/CodeSnippetsLab/assets/js/18.8105e061.js" as="script"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/10.40d4c7a1.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/11.9acb4fa0.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/12.502cd4a1.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/13.148136fa.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/14.91ee3b49.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/15.ff214e7f.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/16.fd4456fe.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/17.52179d58.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/19.09b9f9a2.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/3.4de9f3f8.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/4.5f60d4ea.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/5.a69a9ae9.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/6.ba453c01.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/7.610d3049.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/8.502662dd.js"><link rel="prefetch" href="/CodeSnippetsLab/assets/js/9.78d52fd5.js">
+    <link rel="stylesheet" href="/CodeSnippetsLab/assets/css/0.styles.198c821a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/CodeSnippetsLab/" class="home-link router-link-active"><!----> <span class="site-name">Code Snippets Lab</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="http://www.github.com/sunnnychan" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="http://www.github.com/sunnnychan" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/CodeSnippetsLab/java/" class="sidebar-heading clickable open"><span>Java</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/CodeSnippetsLab/java/cookbook/" class="sidebar-link">Cookbook</a></li><li><a href="/CodeSnippetsLab/java/spring/" class="sidebar-link">Spring</a></li><li><a href="/CodeSnippetsLab/java/log4j/" class="sidebar-link">log4j</a></li><li><a href="/CodeSnippetsLab/java/typecast/" class="sidebar-link">类型转换</a></li><li><a href="/CodeSnippetsLab/java/code-inspect/" class="sidebar-link">代码检测</a></li></ul></section></li><li><a href="/CodeSnippetsLab/python/" class="sidebar-link">Python</a></li><li><a href="/CodeSnippetsLab/c/" class="sidebar-link">C</a></li><li><a href="/CodeSnippetsLab/shell/" class="active sidebar-link">Shell</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/CodeSnippetsLab/shell/#tetris-sh" class="sidebar-link">tetris.sh</a></li></ul></li><li><a href="/CodeSnippetsLab/php/" class="sidebar-link">PHP</a></li><li><a href="/CodeSnippetsLab/lua/" class="sidebar-link">Lua</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="shell"><a href="#shell" class="header-anchor">#</a> Shell</h1> <h2 id="tetris-sh"><a href="#tetris-sh" class="header-anchor">#</a> tetris.sh</h2> <div class="language-bash extra-class"><pre class="language-bash"><code>
+<span class="token comment">#!/bin/bash</span>
+
+<span class="token comment"># Tetris Game</span>
+<span class="token comment"># 10.21.2003 xhchen&lt;[email]xhchen@winbond.com.tw[/email]&gt;</span>
+
+<span class="token comment">#APP declaration</span>
+<span class="token assign-left variable">APP_NAME</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable">${0<span class="token operator">##</span>*<span class="token punctuation">[</span>\\<span class="token operator">/</span><span class="token punctuation">]</span>}</span>&quot;</span>
+<span class="token assign-left variable">APP_VERSION</span><span class="token operator">=</span><span class="token string">&quot;1.0&quot;</span>
+
+
+<span class="token comment">#颜色定义</span>
+<span class="token assign-left variable">cRed</span><span class="token operator">=</span><span class="token number">1</span>
+<span class="token assign-left variable">cGreen</span><span class="token operator">=</span><span class="token number">2</span>
+<span class="token assign-left variable">cYellow</span><span class="token operator">=</span><span class="token number">3</span>
+<span class="token assign-left variable">cBlue</span><span class="token operator">=</span><span class="token number">4</span>
+<span class="token assign-left variable">cFuchsia</span><span class="token operator">=</span><span class="token number">5</span>
+<span class="token assign-left variable">cCyan</span><span class="token operator">=</span><span class="token number">6</span>
+<span class="token assign-left variable">cWhite</span><span class="token operator">=</span><span class="token number">7</span>
+<span class="token assign-left variable">colorTable</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token variable">$cRed</span> <span class="token variable">$cGreen</span> <span class="token variable">$cYellow</span> <span class="token variable">$cBlue</span> <span class="token variable">$cFuchsia</span> <span class="token variable">$cCyan</span> <span class="token variable">$cWhite</span><span class="token punctuation">)</span>
+
+<span class="token comment">#位置和大小</span>
+<span class="token assign-left variable">iLeft</span><span class="token operator">=</span><span class="token number">3</span>
+<span class="token assign-left variable">iTop</span><span class="token operator">=</span><span class="token number">2</span>
+<span class="token variable"><span class="token punctuation">((</span>iTrayLeft <span class="token operator">=</span> iLeft <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">))</span></span>
+<span class="token variable"><span class="token punctuation">((</span>iTrayTop <span class="token operator">=</span> iTop <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">))</span></span>
+<span class="token variable"><span class="token punctuation">((</span>iTrayWidth <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">))</span></span>
+<span class="token variable"><span class="token punctuation">((</span>iTrayHeight <span class="token operator">=</span> <span class="token number">15</span><span class="token punctuation">))</span></span>
+
+<span class="token comment">#颜色设置</span>
+<span class="token assign-left variable">cBorder</span><span class="token operator">=</span><span class="token variable">$cGreen</span>
+<span class="token assign-left variable">cScore</span><span class="token operator">=</span><span class="token variable">$cFuchsia</span>
+<span class="token assign-left variable">cScoreValue</span><span class="token operator">=</span><span class="token variable">$cCyan</span>
+
+<span class="token comment">#控制信号</span>
+<span class="token comment">#该游戏使用两个进程，一个用于接收输入，一个用于游戏流程和显示界面;</span>
+<span class="token comment">#当前者接收到上下左右等按键时，通过向后者发送signal的方式通知后者。</span>
+<span class="token assign-left variable">sigRotate</span><span class="token operator">=</span><span class="token number">25</span>
+<span class="token assign-left variable">sigLeft</span><span class="token operator">=</span><span class="token number">26</span>
+<span class="token assign-left variable">sigRight</span><span class="token operator">=</span><span class="token number">27</span>
+<span class="token assign-left variable">sigDown</span><span class="token operator">=</span><span class="token number">28</span>
+<span class="token assign-left variable">sigAllDown</span><span class="token operator">=</span><span class="token number">29</span>
+<span class="token assign-left variable">sigExit</span><span class="token operator">=</span><span class="token number">30</span>
+
+<span class="token comment">#七中不同的方块的定义</span>
+<span class="token comment">#通过旋转，每种方块的显示的样式可能有几种</span>
+<span class="token assign-left variable">box0</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span> <span class="token number">0</span> <span class="token number">0</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">0</span> <span class="token number">1</span> <span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token assign-left variable">box1</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span> <span class="token number">2</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">2</span> <span class="token number">2</span> <span class="token number">3</span> <span class="token number">2</span> <span class="token number">1</span> <span class="token number">0</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">1</span> <span class="token number">3</span><span class="token punctuation">)</span>
+<span class="token assign-left variable">box2</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span> <span class="token number">0</span> <span class="token number">0</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">0</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">0</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token assign-left variable">box3</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span> <span class="token number">1</span> <span class="token number">0</span> <span class="token number">2</span> <span class="token number">1</span> <span class="token number">0</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">0</span> <span class="token number">0</span> <span class="token number">1</span> <span class="token number">0</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token assign-left variable">box4</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span> <span class="token number">1</span> <span class="token number">0</span> <span class="token number">2</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">0</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">2</span> <span class="token number">2</span> <span class="token number">0</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">0</span> <span class="token number">2</span> <span class="token number">1</span> <span class="token number">0</span> <span class="token number">0</span> <span class="token number">1</span> <span class="token number">0</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">2</span><span class="token punctuation">)</span>
+<span class="token assign-left variable">box5</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">2</span> <span class="token number">1</span> <span class="token number">0</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">2</span> <span class="token number">0</span> <span class="token number">0</span> <span class="token number">0</span> <span class="token number">0</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">1</span> <span class="token number">0</span> <span class="token number">2</span> <span class="token number">1</span> <span class="token number">0</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">2</span><span class="token punctuation">)</span>
+<span class="token assign-left variable">box6</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">2</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">0</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">2</span> <span class="token number">1</span> <span class="token number">0</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">0</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">1</span> <span class="token number">0</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">0</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">1</span> <span class="token number">2</span><span class="token punctuation">)</span>
+
+<span class="token comment">#所有其中方块的定义都放到box变量中</span>
+<span class="token assign-left variable">box</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token variable">${box0<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span> <span class="token variable">${box1<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span> <span class="token variable">${box2<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span> <span class="token variable">${box3<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span> <span class="token variable">${box4<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span> <span class="token variable">${box5<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span> <span class="token variable">${box6<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span><span class="token punctuation">)</span>
+
+<span class="token comment">#各种方块旋转后可能的样式数目</span>
+<span class="token assign-left variable">countBox</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token number">2</span> <span class="token number">2</span> <span class="token number">2</span> <span class="token number">4</span> <span class="token number">4</span> <span class="token number">4</span><span class="token punctuation">)</span>
+
+<span class="token comment">#各种方块再box数组中的偏移</span>
+<span class="token assign-left variable">offsetBox</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span> <span class="token number">1</span> <span class="token number">3</span> <span class="token number">5</span> <span class="token number">7</span> <span class="token number">11</span> <span class="token number">15</span><span class="token punctuation">)</span>
+
+<span class="token comment">#每提高一个速度级需要积累的分数</span>
+<span class="token assign-left variable">iScoreEachLevel</span><span class="token operator">=</span><span class="token number">50</span>        <span class="token comment">#be greater than 7</span>
+
+<span class="token comment">#运行时数据</span>
+<span class="token assign-left variable">sig</span><span class="token operator">=</span><span class="token number">0</span>                <span class="token comment">#接收到的signal</span>
+<span class="token assign-left variable">iScore</span><span class="token operator">=</span><span class="token number">0</span>        <span class="token comment">#总分</span>
+<span class="token assign-left variable">iLevel</span><span class="token operator">=</span><span class="token number">0</span>        <span class="token comment">#速度级</span>
+<span class="token assign-left variable">boxNew</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token punctuation">)</span>        <span class="token comment">#新下落的方块的位置定义</span>
+<span class="token assign-left variable">cBoxNew</span><span class="token operator">=</span><span class="token number">0</span>        <span class="token comment">#新下落的方块的颜色</span>
+<span class="token assign-left variable">iBoxNewType</span><span class="token operator">=</span><span class="token number">0</span>        <span class="token comment">#新下落的方块的种类</span>
+<span class="token assign-left variable">iBoxNewRotate</span><span class="token operator">=</span><span class="token number">0</span>        <span class="token comment">#新下落的方块的旋转角度</span>
+<span class="token assign-left variable">boxCur</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token punctuation">)</span>        <span class="token comment">#当前方块的位置定义</span>
+<span class="token assign-left variable">cBoxCur</span><span class="token operator">=</span><span class="token number">0</span>        <span class="token comment">#当前方块的颜色</span>
+<span class="token assign-left variable">iBoxCurType</span><span class="token operator">=</span><span class="token number">0</span>        <span class="token comment">#当前方块的种类</span>
+<span class="token assign-left variable">iBoxCurRotate</span><span class="token operator">=</span><span class="token number">0</span>        <span class="token comment">#当前方块的旋转角度</span>
+<span class="token assign-left variable">boxCurX</span><span class="token operator">=</span>-1        <span class="token comment">#当前方块的x坐标位置</span>
+<span class="token assign-left variable">boxCurY</span><span class="token operator">=</span>-1        <span class="token comment">#当前方块的y坐标位置</span>
+<span class="token assign-left variable">iMap</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token punctuation">)</span>                <span class="token comment">#背景方块图表</span>
+
+<span class="token comment">#初始化所有背景方块为-1, 表示没有方块</span>
+<span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> iTrayHeight <span class="token operator">*</span> iTrayWidth<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">))</span></span><span class="token punctuation">;</span> <span class="token keyword">do</span> iMap<span class="token punctuation">[</span><span class="token variable">$i</span><span class="token punctuation">]</span><span class="token operator">=</span>-1<span class="token punctuation">;</span> <span class="token keyword">done</span>
+
+
+<span class="token comment">#接收输入的进程的主函数</span>
+<span class="token keyword">function</span> <span class="token function-name function">RunAsKeyReceiver</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+        <span class="token builtin class-name">local</span> pidDisplayer key aKey sig cESC sTTY
+
+        <span class="token assign-left variable">pidDisplayer</span><span class="token operator">=</span><span class="token variable">$1</span>
+        <span class="token assign-left variable">aKey</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span> <span class="token number">0</span> <span class="token number">0</span><span class="token punctuation">)</span>
+
+        <span class="token assign-left variable">cESC</span><span class="token operator">=</span><span class="token variable"><span class="token variable">`</span><span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\033">\033</span>&quot;</span><span class="token variable">`</span></span>
+        <span class="token assign-left variable">cSpace</span><span class="token operator">=</span><span class="token variable"><span class="token variable">`</span><span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\040">\040</span>&quot;</span><span class="token variable">`</span></span>
+
+        <span class="token comment">#保存终端属性。在read -s读取终端键时，终端的属性会被暂时改变。</span>
+        <span class="token comment">#如果在read -s时程序被不幸杀掉，可能会导致终端混乱，</span>
+        <span class="token comment">#需要在程序退出时恢复终端属性。</span>
+        <span class="token assign-left variable">sTTY</span><span class="token operator">=</span><span class="token variable"><span class="token variable">`</span>stty -g<span class="token variable">`</span></span>
+
+        <span class="token comment">#捕捉退出信号</span>
+        <span class="token builtin class-name">trap</span> <span class="token string">&quot;MyExit;&quot;</span> INT <span class="token environment constant">TERM</span>
+        <span class="token builtin class-name">trap</span> <span class="token string">&quot;MyExitNoSub;&quot;</span> <span class="token variable">$sigExit</span>
+
+        <span class="token comment">#隐藏光标</span>
+        <span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[?25l&quot;</span>
+
+
+        <span class="token keyword">while</span> <span class="token builtin class-name">:</span>
+        <span class="token keyword">do</span>
+                <span class="token comment">#读取输入。注-s不回显，-n读到一个字符立即返回</span>
+                <span class="token builtin class-name">read</span> -s -n <span class="token number">1</span> key
+
+                aKey<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token variable">${aKey<span class="token punctuation">[</span>1<span class="token punctuation">]</span>}</span>
+                aKey<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token variable">${aKey<span class="token punctuation">[</span>2<span class="token punctuation">]</span>}</span>
+                aKey<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token variable">$key</span>
+                <span class="token assign-left variable">sig</span><span class="token operator">=</span><span class="token number">0</span>
+
+                <span class="token comment">#判断输入了何种键</span>
+                <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$key</span> <span class="token operator">==</span> <span class="token variable">$cESC</span> <span class="token operator">&amp;&amp;</span> <span class="token variable">${aKey<span class="token punctuation">[</span>1<span class="token punctuation">]</span>}</span> <span class="token operator">==</span> <span class="token variable">$cESC</span> <span class="token punctuation">]</span><span class="token punctuation">]</span>
+                <span class="token keyword">then</span>
+                        <span class="token comment">#ESC键</span>
+                        MyExit
+                <span class="token keyword">elif</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">${aKey<span class="token punctuation">[</span>0<span class="token punctuation">]</span>}</span> <span class="token operator">==</span> <span class="token variable">$cESC</span> <span class="token operator">&amp;&amp;</span> <span class="token variable">${aKey<span class="token punctuation">[</span>1<span class="token punctuation">]</span>}</span> <span class="token operator">==</span> <span class="token string">&quot;[&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">]</span>
+                <span class="token keyword">then</span>
+                        <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$key</span> <span class="token operator">==</span> <span class="token string">&quot;A&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span> <span class="token assign-left variable">sig</span><span class="token operator">=</span><span class="token variable">$sigRotate</span>        <span class="token comment">#&lt;向上键&gt;</span>
+                        <span class="token keyword">elif</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$key</span> <span class="token operator">==</span> <span class="token string">&quot;B&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span> <span class="token assign-left variable">sig</span><span class="token operator">=</span><span class="token variable">$sigDown</span>        <span class="token comment">#&lt;向下键&gt;</span>
+                        <span class="token keyword">elif</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$key</span> <span class="token operator">==</span> <span class="token string">&quot;D&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span> <span class="token assign-left variable">sig</span><span class="token operator">=</span><span class="token variable">$sigLeft</span>        <span class="token comment">#&lt;向左键&gt;</span>
+                        <span class="token keyword">elif</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$key</span> <span class="token operator">==</span> <span class="token string">&quot;C&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span> <span class="token assign-left variable">sig</span><span class="token operator">=</span><span class="token variable">$sigRight</span>        <span class="token comment">#&lt;向右键&gt;</span>
+                        <span class="token keyword">fi</span>
+                <span class="token keyword">elif</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$key</span> <span class="token operator">==</span> <span class="token string">&quot;W&quot;</span> <span class="token operator">||</span> <span class="token variable">$key</span> <span class="token operator">==</span> <span class="token string">&quot;w&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span> <span class="token assign-left variable">sig</span><span class="token operator">=</span><span class="token variable">$sigRotate</span>        <span class="token comment">#W, w</span>
+                <span class="token keyword">elif</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$key</span> <span class="token operator">==</span> <span class="token string">&quot;S&quot;</span> <span class="token operator">||</span> <span class="token variable">$key</span> <span class="token operator">==</span> <span class="token string">&quot;s&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span> <span class="token assign-left variable">sig</span><span class="token operator">=</span><span class="token variable">$sigDown</span>        <span class="token comment">#S, s</span>
+                <span class="token keyword">elif</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$key</span> <span class="token operator">==</span> <span class="token string">&quot;A&quot;</span> <span class="token operator">||</span> <span class="token variable">$key</span> <span class="token operator">==</span> <span class="token string">&quot;a&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span> <span class="token assign-left variable">sig</span><span class="token operator">=</span><span class="token variable">$sigLeft</span>        <span class="token comment">#A, a</span>
+                <span class="token keyword">elif</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$key</span> <span class="token operator">==</span> <span class="token string">&quot;D&quot;</span> <span class="token operator">||</span> <span class="token variable">$key</span> <span class="token operator">==</span> <span class="token string">&quot;d&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span> <span class="token assign-left variable">sig</span><span class="token operator">=</span><span class="token variable">$sigRight</span>        <span class="token comment">#D, d</span>
+                <span class="token keyword">elif</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token string">&quot;[<span class="token variable">$key</span>]&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;[]&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span> <span class="token assign-left variable">sig</span><span class="token operator">=</span><span class="token variable">$sigAllDown</span>        <span class="token comment">#空格键</span>
+                <span class="token keyword">elif</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$key</span> <span class="token operator">==</span> <span class="token string">&quot;Q&quot;</span> <span class="token operator">||</span> <span class="token variable">$key</span> <span class="token operator">==</span> <span class="token string">&quot;q&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">]</span>                        <span class="token comment">#Q, q</span>
+                <span class="token keyword">then</span>
+                        MyExit
+                <span class="token keyword">fi</span>
+
+                <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$sig</span> <span class="token operator">!=</span> <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">]</span>
+                <span class="token keyword">then</span>
+                        <span class="token comment">#向另一进程发送消息</span>
+                        <span class="token function">kill</span> -<span class="token variable">$sig</span> <span class="token variable">$pidDisplayer</span>
+                <span class="token keyword">fi</span>
+        <span class="token keyword">done</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">#退出前的恢复</span>
+<span class="token keyword">function</span> <span class="token function-name function">MyExitNoSub</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+        <span class="token builtin class-name">local</span> y
+
+        <span class="token comment">#恢复终端属性</span>
+        stty <span class="token variable">$sTTY</span>
+        <span class="token variable"><span class="token punctuation">((</span>y <span class="token operator">=</span> iTop <span class="token operator">+</span> iTrayHeight <span class="token operator">+</span> <span class="token number">4</span><span class="token punctuation">))</span></span>
+
+        <span class="token comment">#显示光标</span>
+        <span class="token builtin class-name">echo</span> -e <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[?25h<span class="token entity" title="\033">\033</span>[<span class="token variable">${y}</span>;0H&quot;</span>
+        <span class="token builtin class-name">exit</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">function</span> <span class="token function-name function">MyExit</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+        <span class="token comment">#通知显示进程需要退出</span>
+        <span class="token function">kill</span> -<span class="token variable">$sigExit</span> <span class="token variable">$pidDisplayer</span>
+
+        MyExitNoSub
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">#处理显示和游戏流程的主函数</span>
+<span class="token keyword">function</span> <span class="token function-name function">RunAsDisplayer</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+        <span class="token builtin class-name">local</span> sigThis
+        InitDraw
+
+        <span class="token comment">#挂载各种信号的处理函数</span>
+        <span class="token builtin class-name">trap</span> <span class="token string">&quot;sig=<span class="token variable">$sigRotate</span>;&quot;</span> <span class="token variable">$sigRotate</span>
+        <span class="token builtin class-name">trap</span> <span class="token string">&quot;sig=<span class="token variable">$sigLeft</span>;&quot;</span> <span class="token variable">$sigLeft</span>
+        <span class="token builtin class-name">trap</span> <span class="token string">&quot;sig=<span class="token variable">$sigRight</span>;&quot;</span> <span class="token variable">$sigRight</span>
+        <span class="token builtin class-name">trap</span> <span class="token string">&quot;sig=<span class="token variable">$sigDown</span>;&quot;</span> <span class="token variable">$sigDown</span>
+        <span class="token builtin class-name">trap</span> <span class="token string">&quot;sig=<span class="token variable">$sigAllDown</span>;&quot;</span> <span class="token variable">$sigAllDown</span>
+        <span class="token builtin class-name">trap</span> <span class="token string">&quot;ShowExit;&quot;</span> <span class="token variable">$sigExit</span>
+
+        <span class="token keyword">while</span> <span class="token builtin class-name">:</span>
+        <span class="token keyword">do</span>
+                <span class="token comment">#根据当前的速度级iLevel不同，设定相应的循环的次数</span>
+                <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">21</span> <span class="token operator">-</span> iLevel<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">))</span></span>
+                <span class="token keyword">do</span>
+                        <span class="token function">sleep</span> <span class="token number">0.02</span>
+                        <span class="token assign-left variable">sigThis</span><span class="token operator">=</span><span class="token variable">$sig</span>
+                        <span class="token assign-left variable">sig</span><span class="token operator">=</span><span class="token number">0</span>
+
+                        <span class="token comment">#根据sig变量判断是否接受到相应的信号</span>
+                        <span class="token keyword">if</span> <span class="token variable"><span class="token punctuation">((</span>sigThis <span class="token operator">==</span> sigRotate<span class="token punctuation">))</span></span><span class="token punctuation">;</span> <span class="token keyword">then</span> BoxRotate<span class="token punctuation">;</span>        <span class="token comment">#旋转</span>
+                        <span class="token keyword">elif</span> <span class="token variable"><span class="token punctuation">((</span>sigThis <span class="token operator">==</span> sigLeft<span class="token punctuation">))</span></span><span class="token punctuation">;</span> <span class="token keyword">then</span> BoxLeft<span class="token punctuation">;</span>        <span class="token comment">#左移一列</span>
+                        <span class="token keyword">elif</span> <span class="token variable"><span class="token punctuation">((</span>sigThis <span class="token operator">==</span> sigRight<span class="token punctuation">))</span></span><span class="token punctuation">;</span> <span class="token keyword">then</span> BoxRight<span class="token punctuation">;</span>        <span class="token comment">#右移一列</span>
+                        <span class="token keyword">elif</span> <span class="token variable"><span class="token punctuation">((</span>sigThis <span class="token operator">==</span> sigDown<span class="token punctuation">))</span></span><span class="token punctuation">;</span> <span class="token keyword">then</span> BoxDown<span class="token punctuation">;</span>        <span class="token comment">#下落一行</span>
+                        <span class="token keyword">elif</span> <span class="token variable"><span class="token punctuation">((</span>sigThis <span class="token operator">==</span> sigAllDown<span class="token punctuation">))</span></span><span class="token punctuation">;</span> <span class="token keyword">then</span> BoxAllDown<span class="token punctuation">;</span>        <span class="token comment">#下落到底</span>
+                        <span class="token keyword">fi</span>
+                <span class="token keyword">done</span>
+                <span class="token comment">#kill -$sigDown $$</span>
+                BoxDown        <span class="token comment">#下落一行</span>
+        <span class="token keyword">done</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">#BoxMove(y, x), 测试是否可以把移动中的方块移到(x, y)的位置, 返回0则可以, 1不可以</span>
+<span class="token keyword">function</span> <span class="token function-name function">BoxMove</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+        <span class="token builtin class-name">local</span> j i x y xTest yTest
+        <span class="token assign-left variable">yTest</span><span class="token operator">=</span><span class="token variable">$1</span>
+        <span class="token assign-left variable">xTest</span><span class="token operator">=</span><span class="token variable">$2</span>
+        <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> <span class="token number">8</span><span class="token punctuation">;</span> j <span class="token operator">+</span><span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">))</span></span>
+        <span class="token keyword">do</span>
+                <span class="token variable"><span class="token punctuation">((</span>i <span class="token operator">=</span> j <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">))</span></span>
+                <span class="token variable"><span class="token punctuation">((</span>y <span class="token operator">=</span> ${boxCur[$j]} <span class="token operator">+</span> yTest<span class="token punctuation">))</span></span>
+                <span class="token variable"><span class="token punctuation">((</span>x <span class="token operator">=</span> ${boxCur[$i]} <span class="token operator">+</span> xTest<span class="token punctuation">))</span></span>
+                <span class="token keyword">if</span> <span class="token variable"><span class="token punctuation">((</span> y <span class="token operator">&lt;</span> <span class="token number">0</span> <span class="token operator">||</span> y <span class="token operator">&gt;=</span> iTrayHeight <span class="token operator">||</span> x <span class="token operator">&lt;</span> <span class="token number">0</span> <span class="token operator">||</span> x <span class="token operator">&gt;=</span> iTrayWidth<span class="token punctuation">))</span></span>
+                <span class="token keyword">then</span>
+                        <span class="token comment">#撞到墙壁了</span>
+                        <span class="token builtin class-name">return</span> <span class="token number">1</span>
+                <span class="token keyword">fi</span>
+                <span class="token keyword">if</span> <span class="token variable"><span class="token punctuation">((</span>${iMap[y <span class="token operator">*</span> iTrayWidth <span class="token operator">+</span> x]} <span class="token operator">!=</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token punctuation">))</span></span>
+                <span class="token keyword">then</span>
+                        <span class="token comment">#撞到其他已经存在的方块了</span>
+                        <span class="token builtin class-name">return</span> <span class="token number">1</span>
+                <span class="token keyword">fi</span>
+        <span class="token keyword">done</span>
+        <span class="token builtin class-name">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">#将当前移动中的方块放到背景方块中去,</span>
+<span class="token comment">#并计算新的分数和速度级。(即一次方块落到底部)</span>
+<span class="token keyword">function</span> <span class="token function-name function">Box2Map</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+        <span class="token builtin class-name">local</span> j i x y xp yp line
+
+        <span class="token comment">#将当前移动中的方块放到背景方块中去</span>
+        <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> <span class="token number">8</span><span class="token punctuation">;</span> j <span class="token operator">+</span><span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">))</span></span>
+        <span class="token keyword">do</span>
+                <span class="token variable"><span class="token punctuation">((</span>i <span class="token operator">=</span> j <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">))</span></span>
+                <span class="token variable"><span class="token punctuation">((</span>y <span class="token operator">=</span> ${boxCur[$j]} <span class="token operator">+</span> boxCurY<span class="token punctuation">))</span></span>
+                <span class="token variable"><span class="token punctuation">((</span>x <span class="token operator">=</span> ${boxCur[$i]} <span class="token operator">+</span> boxCurX<span class="token punctuation">))</span></span>
+                <span class="token variable"><span class="token punctuation">((</span>i <span class="token operator">=</span> y <span class="token operator">*</span> iTrayWidth <span class="token operator">+</span> x<span class="token punctuation">))</span></span>
+                iMap<span class="token punctuation">[</span><span class="token variable">$i</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token variable">$cBoxCur</span>
+        <span class="token keyword">done</span>
+
+        <span class="token comment">#消去可被消去的行</span>
+        <span class="token assign-left variable">line</span><span class="token operator">=</span><span class="token number">0</span>
+        <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> iTrayWidth <span class="token operator">*</span> iTrayHeight<span class="token punctuation">;</span> j <span class="token operator">+</span><span class="token operator">=</span> iTrayWidth<span class="token punctuation">))</span></span>
+        <span class="token keyword">do</span>
+                <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>i <span class="token operator">=</span> j <span class="token operator">+</span> iTrayWidth <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&gt;=</span> j<span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">))</span></span>
+                <span class="token keyword">do</span>
+                        <span class="token keyword">if</span> <span class="token variable"><span class="token punctuation">((</span>${iMap[$i]} <span class="token operator">==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">))</span></span><span class="token punctuation">;</span> <span class="token keyword">then</span> <span class="token builtin class-name">break</span><span class="token punctuation">;</span> <span class="token keyword">fi</span>
+                <span class="token keyword">done</span>
+                <span class="token keyword">if</span> <span class="token variable"><span class="token punctuation">((</span>i <span class="token operator">&gt;=</span> j<span class="token punctuation">))</span></span><span class="token punctuation">;</span> <span class="token keyword">then</span> <span class="token builtin class-name">continue</span><span class="token punctuation">;</span> <span class="token keyword">fi</span>
+
+                <span class="token variable"><span class="token punctuation">((</span>line<span class="token operator">++</span><span class="token punctuation">))</span></span>
+                <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>i <span class="token operator">=</span> j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">))</span></span>
+                <span class="token keyword">do</span>
+                        <span class="token variable"><span class="token punctuation">((</span>x <span class="token operator">=</span> i <span class="token operator">+</span> iTrayWidth<span class="token punctuation">))</span></span>
+                        iMap<span class="token punctuation">[</span><span class="token variable">$x</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token variable">${iMap<span class="token punctuation">[</span>$i<span class="token punctuation">]</span>}</span>
+                <span class="token keyword">done</span>
+                <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> iTrayWidth<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">))</span></span>
+                <span class="token keyword">do</span>
+                        iMap<span class="token punctuation">[</span><span class="token variable">$i</span><span class="token punctuation">]</span><span class="token operator">=</span>-1
+                <span class="token keyword">done</span>
+        <span class="token keyword">done</span>
+
+        <span class="token keyword">if</span> <span class="token variable"><span class="token punctuation">((</span>line <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">))</span></span><span class="token punctuation">;</span> <span class="token keyword">then</span> <span class="token builtin class-name">return</span><span class="token punctuation">;</span> <span class="token keyword">fi</span>
+
+        <span class="token comment">#根据消去的行数line计算分数和速度级</span>
+        <span class="token variable"><span class="token punctuation">((</span>x <span class="token operator">=</span> iLeft <span class="token operator">+</span> iTrayWidth <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token number">7</span><span class="token punctuation">))</span></span>
+        <span class="token variable"><span class="token punctuation">((</span>y <span class="token operator">=</span> iTop <span class="token operator">+</span> <span class="token number">11</span><span class="token punctuation">))</span></span>
+        <span class="token variable"><span class="token punctuation">((</span>iScore <span class="token operator">+</span><span class="token operator">=</span> line <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">))</span></span>
+        <span class="token comment">#显示新的分数</span>
+        <span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[1m<span class="token entity" title="\033">\033</span>[3<span class="token variable">${cScoreValue}</span>m<span class="token entity" title="\033">\033</span>[<span class="token variable">${y}</span>;<span class="token variable">${x}</span>H<span class="token variable">${iScore}</span>         &quot;</span>
+        <span class="token keyword">if</span> <span class="token variable"><span class="token punctuation">((</span>iScore <span class="token operator">%</span> iScoreEachLevel <span class="token operator">&lt;</span> line <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">))</span></span>
+        <span class="token keyword">then</span>
+                <span class="token keyword">if</span> <span class="token variable"><span class="token punctuation">((</span>iLevel <span class="token operator">&lt;</span> <span class="token number">20</span><span class="token punctuation">))</span></span>
+                <span class="token keyword">then</span>
+                        <span class="token variable"><span class="token punctuation">((</span>iLevel<span class="token operator">++</span><span class="token punctuation">))</span></span>
+                        <span class="token variable"><span class="token punctuation">((</span>y <span class="token operator">=</span> iTop <span class="token operator">+</span> <span class="token number">14</span><span class="token punctuation">))</span></span>
+                        <span class="token comment">#显示新的速度级</span>
+                        <span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[3<span class="token variable">${cScoreValue}</span>m<span class="token entity" title="\033">\033</span>[<span class="token variable">${y}</span>;<span class="token variable">${x}</span>H<span class="token variable">${iLevel}</span>        &quot;</span>
+                <span class="token keyword">fi</span>
+        <span class="token keyword">fi</span>
+        <span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[0m&quot;</span>
+
+
+        <span class="token comment">#重新显示背景方块</span>
+        <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>y <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> y <span class="token operator">&lt;</span> iTrayHeight<span class="token punctuation">;</span> y<span class="token operator">++</span><span class="token punctuation">))</span></span>
+        <span class="token keyword">do</span>
+                <span class="token variable"><span class="token punctuation">((</span>yp <span class="token operator">=</span> y <span class="token operator">+</span> iTrayTop <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">))</span></span>
+                <span class="token variable"><span class="token punctuation">((</span>xp <span class="token operator">=</span> iTrayLeft <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">))</span></span>
+                <span class="token variable"><span class="token punctuation">((</span>i <span class="token operator">=</span> y <span class="token operator">*</span> iTrayWidth<span class="token punctuation">))</span></span>
+                <span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[<span class="token variable">${yp}</span>;<span class="token variable">${xp}</span>H&quot;</span>
+                <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>x <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> x <span class="token operator">&lt;</span> iTrayWidth<span class="token punctuation">;</span> x<span class="token operator">++</span><span class="token punctuation">))</span></span>
+                <span class="token keyword">do</span>
+                        <span class="token variable"><span class="token punctuation">((</span>j <span class="token operator">=</span> i <span class="token operator">+</span> x<span class="token punctuation">))</span></span>
+                        <span class="token keyword">if</span> <span class="token variable"><span class="token punctuation">((</span>${iMap[$j]} <span class="token operator">==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">))</span></span>
+                        <span class="token keyword">then</span>
+                                <span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;  &quot;</span>
+                        <span class="token keyword">else</span>
+                                <span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[1m<span class="token entity" title="\033">\033</span>[7m<span class="token entity" title="\033">\033</span>[3<span class="token variable">${iMap<span class="token punctuation">[</span>$j<span class="token punctuation">]</span>}</span>m<span class="token entity" title="\033">\033</span>[4<span class="token variable">${iMap<span class="token punctuation">[</span>$j<span class="token punctuation">]</span>}</span>m[]<span class="token entity" title="\033">\033</span>[0m&quot;</span>
+                        <span class="token keyword">fi</span>
+                <span class="token keyword">done</span>
+        <span class="token keyword">done</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">#下落一行</span>
+<span class="token keyword">function</span> <span class="token function-name function">BoxDown</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+        <span class="token builtin class-name">local</span> y s
+        <span class="token variable"><span class="token punctuation">((</span>y <span class="token operator">=</span> boxCurY <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">))</span></span>        <span class="token comment">#新的y坐标</span>
+        <span class="token keyword">if</span> BoxMove <span class="token variable">$y</span> <span class="token variable">$boxCurX</span>        <span class="token comment">#测试是否可以下落一行</span>
+        <span class="token keyword">then</span>
+                <span class="token assign-left variable">s</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable"><span class="token variable">`</span>DrawCurBox <span class="token number">0</span><span class="token variable">`</span></span>&quot;</span>        <span class="token comment">#将旧的方块抹去</span>
+                <span class="token variable"><span class="token punctuation">((</span>boxCurY <span class="token operator">=</span> y<span class="token punctuation">))</span></span>
+                <span class="token assign-left variable">s</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable">$s</span><span class="token variable"><span class="token variable">`</span>DrawCurBox <span class="token number">1</span><span class="token variable">`</span></span>&quot;</span>        <span class="token comment">#显示新的下落后方块</span>
+                <span class="token builtin class-name">echo</span> -ne <span class="token variable">$s</span>
+        <span class="token keyword">else</span>
+                <span class="token comment">#走到这儿, 如果不能下落了</span>
+                Box2Map                <span class="token comment">#将当前移动中的方块贴到背景方块中</span>
+                RandomBox        <span class="token comment">#产生新的方块</span>
+        <span class="token keyword">fi</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">#左移一列</span>
+<span class="token keyword">function</span> <span class="token function-name function">BoxLeft</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+        <span class="token builtin class-name">local</span> x s
+        <span class="token variable"><span class="token punctuation">((</span>x <span class="token operator">=</span> boxCurX <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">))</span></span>
+        <span class="token keyword">if</span> BoxMove <span class="token variable">$boxCurY</span> <span class="token variable">$x</span>
+        <span class="token keyword">then</span>
+                <span class="token assign-left variable">s</span><span class="token operator">=</span><span class="token variable"><span class="token variable">`</span>DrawCurBox <span class="token number">0</span><span class="token variable">`</span></span>
+                <span class="token variable"><span class="token punctuation">((</span>boxCurX <span class="token operator">=</span> x<span class="token punctuation">))</span></span>
+                <span class="token assign-left variable">s</span><span class="token operator">=</span><span class="token variable">$s</span><span class="token variable"><span class="token variable">`</span>DrawCurBox <span class="token number">1</span><span class="token variable">`</span></span>
+                <span class="token builtin class-name">echo</span> -ne <span class="token variable">$s</span>
+        <span class="token keyword">fi</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">#右移一列</span>
+<span class="token keyword">function</span> <span class="token function-name function">BoxRight</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+        <span class="token builtin class-name">local</span> x s
+        <span class="token variable"><span class="token punctuation">((</span>x <span class="token operator">=</span> boxCurX <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">))</span></span>
+        <span class="token keyword">if</span> BoxMove <span class="token variable">$boxCurY</span> <span class="token variable">$x</span>
+        <span class="token keyword">then</span>
+                <span class="token assign-left variable">s</span><span class="token operator">=</span><span class="token variable"><span class="token variable">`</span>DrawCurBox <span class="token number">0</span><span class="token variable">`</span></span>
+                <span class="token variable"><span class="token punctuation">((</span>boxCurX <span class="token operator">=</span> x<span class="token punctuation">))</span></span>
+                <span class="token assign-left variable">s</span><span class="token operator">=</span><span class="token variable">$s</span><span class="token variable"><span class="token variable">`</span>DrawCurBox <span class="token number">1</span><span class="token variable">`</span></span>
+                <span class="token builtin class-name">echo</span> -ne <span class="token variable">$s</span>
+        <span class="token keyword">fi</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">#下落到底</span>
+<span class="token keyword">function</span> <span class="token function-name function">BoxAllDown</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+        <span class="token builtin class-name">local</span> k j i x y iDown s
+        <span class="token assign-left variable">iDown</span><span class="token operator">=</span><span class="token variable">$iTrayHeight</span>
+
+        <span class="token comment">#计算一共需要下落多少行</span>
+        <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> <span class="token number">8</span><span class="token punctuation">;</span> j <span class="token operator">+</span><span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">))</span></span>
+        <span class="token keyword">do</span>
+                <span class="token variable"><span class="token punctuation">((</span>i <span class="token operator">=</span> j <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">))</span></span>
+                <span class="token variable"><span class="token punctuation">((</span>y <span class="token operator">=</span> ${boxCur[$j]} <span class="token operator">+</span> boxCurY<span class="token punctuation">))</span></span>
+                <span class="token variable"><span class="token punctuation">((</span>x <span class="token operator">=</span> ${boxCur[$i]} <span class="token operator">+</span> boxCurX<span class="token punctuation">))</span></span>
+                <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>k <span class="token operator">=</span> y <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> k <span class="token operator">&lt;</span> iTrayHeight<span class="token punctuation">;</span> k<span class="token operator">++</span><span class="token punctuation">))</span></span>
+                <span class="token keyword">do</span>
+                        <span class="token variable"><span class="token punctuation">((</span>i <span class="token operator">=</span> k <span class="token operator">*</span> iTrayWidth <span class="token operator">+</span> x<span class="token punctuation">))</span></span>
+                        <span class="token keyword">if</span> <span class="token variable"><span class="token punctuation">((</span> ${iMap[$i]} <span class="token operator">!=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">))</span></span><span class="token punctuation">;</span> <span class="token keyword">then</span> <span class="token builtin class-name">break</span><span class="token punctuation">;</span> <span class="token keyword">fi</span>
+                <span class="token keyword">done</span>
+                <span class="token variable"><span class="token punctuation">((</span>k <span class="token operator">-</span><span class="token operator">=</span> y <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">))</span></span>
+                <span class="token keyword">if</span> <span class="token variable"><span class="token punctuation">((</span> $iDown <span class="token operator">&gt;</span> $k <span class="token punctuation">))</span></span><span class="token punctuation">;</span> <span class="token keyword">then</span> <span class="token assign-left variable">iDown</span><span class="token operator">=</span><span class="token variable">$k</span><span class="token punctuation">;</span> <span class="token keyword">fi</span>
+        <span class="token keyword">done</span>
+
+        <span class="token assign-left variable">s</span><span class="token operator">=</span><span class="token variable"><span class="token variable">`</span>DrawCurBox <span class="token number">0</span><span class="token variable">`</span></span>        <span class="token comment">#将旧的方块抹去</span>
+        <span class="token variable"><span class="token punctuation">((</span>boxCurY <span class="token operator">+</span><span class="token operator">=</span> iDown<span class="token punctuation">))</span></span>
+        <span class="token assign-left variable">s</span><span class="token operator">=</span><span class="token variable">$s</span><span class="token variable"><span class="token variable">`</span>DrawCurBox <span class="token number">1</span><span class="token variable">`</span></span>        <span class="token comment">#显示新的下落后的方块</span>
+        <span class="token builtin class-name">echo</span> -ne <span class="token variable">$s</span>
+        Box2Map                <span class="token comment">#将当前移动中的方块贴到背景方块中</span>
+        RandomBox        <span class="token comment">#产生新的方块</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">#旋转方块</span>
+<span class="token keyword">function</span> <span class="token function-name function">BoxRotate</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+        <span class="token builtin class-name">local</span> iCount iTestRotate boxTest j i s
+        <span class="token assign-left variable">iCount</span><span class="token operator">=</span><span class="token variable">${countBox<span class="token punctuation">[</span>$iBoxCurType<span class="token punctuation">]</span>}</span>        <span class="token comment">#当前的方块经旋转可以产生的样式的数目</span>
+
+        <span class="token comment">#计算旋转后的新的样式</span>
+        <span class="token variable"><span class="token punctuation">((</span>iTestRotate <span class="token operator">=</span> iBoxCurRotate <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">))</span></span>
+        <span class="token keyword">if</span> <span class="token variable"><span class="token punctuation">((</span>iTestRotate <span class="token operator">&gt;=</span> iCount<span class="token punctuation">))</span></span>
+        <span class="token keyword">then</span>
+                <span class="token variable"><span class="token punctuation">((</span>iTestRotate <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">))</span></span>
+        <span class="token keyword">fi</span>
+
+        <span class="token comment">#更新到新的样式, 保存老的样式(但不显示)</span>
+        <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> i <span class="token operator">=</span> <span class="token punctuation">(</span>${offsetBox[$iBoxCurType]} <span class="token operator">+</span> $iTestRotate<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">8</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> <span class="token number">8</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">,</span> i<span class="token operator">++</span><span class="token punctuation">))</span></span>
+        <span class="token keyword">do</span>
+                boxTest<span class="token punctuation">[</span><span class="token variable">$j</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token variable">${boxCur<span class="token punctuation">[</span>$j<span class="token punctuation">]</span>}</span>
+                boxCur<span class="token punctuation">[</span><span class="token variable">$j</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token variable">${box<span class="token punctuation">[</span>$i<span class="token punctuation">]</span>}</span>
+        <span class="token keyword">done</span>
+
+        <span class="token keyword">if</span> BoxMove <span class="token variable">$boxCurY</span> <span class="token variable">$boxCurX</span>        <span class="token comment">#测试旋转后是否有空间放的下</span>
+        <span class="token keyword">then</span>
+                <span class="token comment">#抹去旧的方块</span>
+                <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> <span class="token number">8</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">))</span></span>
+                <span class="token keyword">do</span>
+                        boxCur<span class="token punctuation">[</span><span class="token variable">$j</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token variable">${boxTest<span class="token punctuation">[</span>$j<span class="token punctuation">]</span>}</span>
+                <span class="token keyword">done</span>
+                <span class="token assign-left variable">s</span><span class="token operator">=</span><span class="token variable"><span class="token variable">`</span>DrawCurBox <span class="token number">0</span><span class="token variable">`</span></span>
+
+                <span class="token comment">#画上新的方块</span>
+                <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> i <span class="token operator">=</span> <span class="token punctuation">(</span>${offsetBox[$iBoxCurType]} <span class="token operator">+</span> $iTestRotate<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">8</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> <span class="token number">8</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">,</span> i<span class="token operator">++</span><span class="token punctuation">))</span></span>
+                <span class="token keyword">do</span>
+                        boxCur<span class="token punctuation">[</span><span class="token variable">$j</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token variable">${box<span class="token punctuation">[</span>$i<span class="token punctuation">]</span>}</span>
+                <span class="token keyword">done</span>
+                <span class="token assign-left variable">s</span><span class="token operator">=</span><span class="token variable">$s</span><span class="token variable"><span class="token variable">`</span>DrawCurBox <span class="token number">1</span><span class="token variable">`</span></span>
+                <span class="token builtin class-name">echo</span> -ne <span class="token variable">$s</span>
+                <span class="token assign-left variable">iBoxCurRotate</span><span class="token operator">=</span><span class="token variable">$iTestRotate</span>
+        <span class="token keyword">else</span>
+                <span class="token comment">#不能旋转，还是继续使用老的样式</span>
+                <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> <span class="token number">8</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">))</span></span>
+                <span class="token keyword">do</span>
+                        boxCur<span class="token punctuation">[</span><span class="token variable">$j</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token variable">${boxTest<span class="token punctuation">[</span>$j<span class="token punctuation">]</span>}</span>
+                <span class="token keyword">done</span>
+        <span class="token keyword">fi</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">#DrawCurBox(bDraw), 绘制当前移动中的方块, bDraw为1, 画上, bDraw为0, 抹去方块。</span>
+<span class="token keyword">function</span> <span class="token function-name function">DrawCurBox</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+        <span class="token builtin class-name">local</span> i j t bDraw sBox s
+        <span class="token assign-left variable">bDraw</span><span class="token operator">=</span><span class="token variable">$1</span>
+
+        <span class="token assign-left variable">s</span><span class="token operator">=</span><span class="token string">&quot;&quot;</span>
+        <span class="token keyword">if</span> <span class="token variable"><span class="token punctuation">((</span> bDraw <span class="token operator">==</span> <span class="token number">0</span> <span class="token punctuation">))</span></span>
+        <span class="token keyword">then</span>
+                <span class="token assign-left variable">sBox</span><span class="token operator">=</span><span class="token string">&quot;<span class="token entity" title="\040">\040</span><span class="token entity" title="\040">\040</span>&quot;</span>
+        <span class="token keyword">else</span>
+                <span class="token assign-left variable">sBox</span><span class="token operator">=</span><span class="token string">&quot;[]&quot;</span>
+                <span class="token assign-left variable">s</span><span class="token operator">=</span><span class="token variable">$s</span><span class="token string">&quot;<span class="token entity" title="\033">\033</span>[1m<span class="token entity" title="\033">\033</span>[7m<span class="token entity" title="\033">\033</span>[3<span class="token variable">${cBoxCur}</span>m<span class="token entity" title="\033">\033</span>[4<span class="token variable">${cBoxCur}</span>m&quot;</span>
+        <span class="token keyword">fi</span>
+
+        <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> <span class="token number">8</span><span class="token punctuation">;</span> j <span class="token operator">+</span><span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">))</span></span>
+        <span class="token keyword">do</span>
+                <span class="token variable"><span class="token punctuation">((</span>i <span class="token operator">=</span> iTrayTop <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">+</span> ${boxCur[$j]} <span class="token operator">+</span> boxCurY<span class="token punctuation">))</span></span>
+                <span class="token variable"><span class="token punctuation">((</span>t <span class="token operator">=</span> iTrayLeft <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token number">2</span> <span class="token operator">*</span> <span class="token punctuation">(</span>boxCurX <span class="token operator">+</span> ${boxCur[$j <span class="token operator">+</span> <span class="token number">1</span>]}<span class="token punctuation">))</span></span><span class="token punctuation">)</span>
+                <span class="token comment">#\033[y;xH, 光标到(x, y)处</span>
+                <span class="token assign-left variable">s</span><span class="token operator">=</span><span class="token variable">$s</span><span class="token string">&quot;<span class="token entity" title="\033">\033</span>[<span class="token variable">${i}</span>;<span class="token variable">${t}</span>H<span class="token variable">${sBox}</span>&quot;</span>
+        <span class="token keyword">done</span>
+        <span class="token assign-left variable">s</span><span class="token operator">=</span><span class="token variable">$s</span><span class="token string">&quot;<span class="token entity" title="\033">\033</span>[0m&quot;</span>
+        <span class="token builtin class-name">echo</span> -n <span class="token variable">$s</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">#更新新的方块</span>
+<span class="token keyword">function</span> <span class="token function-name function">RandomBox</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+        <span class="token builtin class-name">local</span> i j t
+
+        <span class="token comment">#更新当前移动的方块</span>
+        <span class="token assign-left variable">iBoxCurType</span><span class="token operator">=</span><span class="token variable">${iBoxNewType}</span>
+        <span class="token assign-left variable">iBoxCurRotate</span><span class="token operator">=</span><span class="token variable">${iBoxNewRotate}</span>
+        <span class="token assign-left variable">cBoxCur</span><span class="token operator">=</span><span class="token variable">${cBoxNew}</span>
+        <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> ${#boxNew[@]}<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">))</span></span>
+        <span class="token keyword">do</span>
+                boxCur<span class="token punctuation">[</span><span class="token variable">$j</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token variable">${boxNew<span class="token punctuation">[</span>$j<span class="token punctuation">]</span>}</span>
+        <span class="token keyword">done</span>
+
+
+        <span class="token comment">#显示当前移动的方块</span>
+        <span class="token keyword">if</span> <span class="token variable"><span class="token punctuation">((</span> ${#boxCur[@]} <span class="token operator">==</span> <span class="token number">8</span> <span class="token punctuation">))</span></span>
+        <span class="token keyword">then</span>
+                <span class="token comment">#计算当前方块该从顶端哪一行&quot;冒&quot;出来</span>
+                <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> t <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> <span class="token number">8</span><span class="token punctuation">;</span> j <span class="token operator">+</span><span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">))</span></span>
+                <span class="token keyword">do</span>
+                        <span class="token keyword">if</span> <span class="token variable"><span class="token punctuation">((</span>${boxCur[$j]} <span class="token operator">&lt;</span> t<span class="token punctuation">))</span></span><span class="token punctuation">;</span> <span class="token keyword">then</span> <span class="token assign-left variable">t</span><span class="token operator">=</span><span class="token variable">${boxCur<span class="token punctuation">[</span>$j<span class="token punctuation">]</span>}</span><span class="token punctuation">;</span> <span class="token keyword">fi</span>
+                <span class="token keyword">done</span>
+                <span class="token variable"><span class="token punctuation">((</span>boxCurY <span class="token operator">=</span> <span class="token operator">-</span>t<span class="token punctuation">))</span></span>
+                <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>j <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> i <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">4</span><span class="token punctuation">,</span> t <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> <span class="token number">8</span><span class="token punctuation">;</span> j <span class="token operator">+</span><span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">))</span></span>
+                <span class="token keyword">do</span>
+                        <span class="token keyword">if</span> <span class="token variable"><span class="token punctuation">((</span>${boxCur[$j]} <span class="token operator">&gt;</span> i<span class="token punctuation">))</span></span><span class="token punctuation">;</span> <span class="token keyword">then</span> <span class="token assign-left variable">i</span><span class="token operator">=</span><span class="token variable">${boxCur<span class="token punctuation">[</span>$j<span class="token punctuation">]</span>}</span><span class="token punctuation">;</span> <span class="token keyword">fi</span>
+                        <span class="token keyword">if</span> <span class="token variable"><span class="token punctuation">((</span>${boxCur[$j]} <span class="token operator">&lt;</span> t<span class="token punctuation">))</span></span><span class="token punctuation">;</span> <span class="token keyword">then</span> <span class="token assign-left variable">t</span><span class="token operator">=</span><span class="token variable">${boxCur<span class="token punctuation">[</span>$j<span class="token punctuation">]</span>}</span><span class="token punctuation">;</span> <span class="token keyword">fi</span>
+                <span class="token keyword">done</span>
+                <span class="token variable"><span class="token punctuation">((</span>boxCurX <span class="token operator">=</span> <span class="token punctuation">(</span>iTrayWidth <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">-</span> i <span class="token operator">-</span> t<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">))</span></span>
+
+                <span class="token comment">#显示当前移动的方块</span>
+                <span class="token builtin class-name">echo</span> -ne <span class="token variable"><span class="token variable">`</span>DrawCurBox <span class="token number">1</span><span class="token variable">`</span></span>
+
+                <span class="token comment">#如果方块一出来就没处放，Game over!</span>
+                <span class="token keyword">if</span> <span class="token operator">!</span> BoxMove <span class="token variable">$boxCurY</span> <span class="token variable">$boxCurX</span>
+                <span class="token keyword">then</span>
+                        <span class="token function">kill</span> -<span class="token variable">$sigExit</span> <span class="token variable">${<span class="token environment constant">PPID</span>}</span>
+                        ShowExit
+                <span class="token keyword">fi</span>
+        <span class="token keyword">fi</span>
+
+
+
+        <span class="token comment">#清除右边预显示的方块</span>
+        <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> <span class="token number">4</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">))</span></span>
+        <span class="token keyword">do</span>
+                <span class="token variable"><span class="token punctuation">((</span>i <span class="token operator">=</span> iTop <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">+</span> j<span class="token punctuation">))</span></span>
+                <span class="token variable"><span class="token punctuation">((</span>t <span class="token operator">=</span> iLeft <span class="token operator">+</span> <span class="token number">2</span> <span class="token operator">*</span> iTrayWidth <span class="token operator">+</span> <span class="token number">7</span><span class="token punctuation">))</span></span>
+                <span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[<span class="token variable">${i}</span>;<span class="token variable">${t}</span>H        &quot;</span>
+        <span class="token keyword">done</span>
+
+        <span class="token comment">#随机产生新的方块</span>
+        <span class="token variable"><span class="token punctuation">((</span>iBoxNewType <span class="token operator">=</span> RANDOM <span class="token operator">%</span> ${#offsetBox[@]}<span class="token punctuation">))</span></span>
+        <span class="token variable"><span class="token punctuation">((</span>iBoxNewRotate <span class="token operator">=</span> RANDOM <span class="token operator">%</span> ${countBox[$iBoxNewType]}<span class="token punctuation">))</span></span>
+        <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> i <span class="token operator">=</span> <span class="token punctuation">(</span>${offsetBox[$iBoxNewType]} <span class="token operator">+</span> $iBoxNewRotate<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">8</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> <span class="token number">8</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">,</span> i<span class="token operator">++</span><span class="token punctuation">))</span></span>
+        <span class="token keyword">do</span>
+                boxNew<span class="token punctuation">[</span><span class="token variable">$j</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token variable">${box<span class="token punctuation">[</span>$i<span class="token punctuation">]</span>}</span><span class="token punctuation">;</span>
+        <span class="token keyword">done</span>
+
+        <span class="token variable"><span class="token punctuation">((</span>cBoxNew <span class="token operator">=</span> ${colorTable[RANDOM <span class="token operator">%</span> ${#colorTable[@]}]}<span class="token punctuation">))</span></span>
+
+        <span class="token comment">#显示右边预显示的方块</span>
+        <span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[1m<span class="token entity" title="\033">\033</span>[7m<span class="token entity" title="\033">\033</span>[3<span class="token variable">${cBoxNew}</span>m<span class="token entity" title="\033">\033</span>[4<span class="token variable">${cBoxNew}</span>m&quot;</span>
+        <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> <span class="token number">8</span><span class="token punctuation">;</span> j <span class="token operator">+</span><span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">))</span></span>
+        <span class="token keyword">do</span>
+                <span class="token variable"><span class="token punctuation">((</span>i <span class="token operator">=</span> iTop <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">+</span> ${boxNew[$j]}<span class="token punctuation">))</span></span>
+                <span class="token variable"><span class="token punctuation">((</span>t <span class="token operator">=</span> iLeft <span class="token operator">+</span> <span class="token number">2</span> <span class="token operator">*</span> iTrayWidth <span class="token operator">+</span> <span class="token number">7</span> <span class="token operator">+</span> <span class="token number">2</span> <span class="token operator">*</span> ${boxNew[$j <span class="token operator">+</span> <span class="token number">1</span>]}<span class="token punctuation">))</span></span>
+                <span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[<span class="token variable">${i}</span>;<span class="token variable">${t}</span>H[]&quot;</span>
+        <span class="token keyword">done</span>
+        <span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[0m&quot;</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">#初始绘制</span>
+<span class="token keyword">function</span> <span class="token function-name function">InitDraw</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+        <span class="token function">clear</span>
+        RandomBox        <span class="token comment">#随机产生方块，这时右边预显示窗口中有方快了</span>
+        RandomBox        <span class="token comment">#再随机产生方块，右边预显示窗口中的方块被更新，原先的方块将开始下落</span>
+        <span class="token builtin class-name">local</span> i t1 t2 t3
+
+        <span class="token comment">#显示边框</span>
+        <span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[1m&quot;</span>
+        <span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[3<span class="token variable">${cBorder}</span>m<span class="token entity" title="\033">\033</span>[4<span class="token variable">${cBorder}</span>m&quot;</span>
+
+        <span class="token variable"><span class="token punctuation">((</span>t2 <span class="token operator">=</span> iLeft <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">))</span></span>
+        <span class="token variable"><span class="token punctuation">((</span>t3 <span class="token operator">=</span> iLeft <span class="token operator">+</span> iTrayWidth <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token number">3</span><span class="token punctuation">))</span></span>
+        <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> iTrayHeight<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">))</span></span>
+        <span class="token keyword">do</span>
+                <span class="token variable"><span class="token punctuation">((</span>t1 <span class="token operator">=</span> i <span class="token operator">+</span> iTop <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">))</span></span>
+                <span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[<span class="token variable">${t1}</span>;<span class="token variable">${t2}</span>H||&quot;</span>
+                <span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[<span class="token variable">${t1}</span>;<span class="token variable">${t3}</span>H||&quot;</span>
+        <span class="token keyword">done</span>
+
+        <span class="token variable"><span class="token punctuation">((</span>t2 <span class="token operator">=</span> iTop <span class="token operator">+</span> iTrayHeight <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">))</span></span>
+        <span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> iTrayWidth <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">))</span></span>
+        <span class="token keyword">do</span>
+                <span class="token variable"><span class="token punctuation">((</span>t1 <span class="token operator">=</span> i <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">+</span> iLeft <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">))</span></span>
+                <span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[<span class="token variable">${iTrayTop}</span>;<span class="token variable">${t1}</span>H==&quot;</span>
+                <span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[<span class="token variable">${t2}</span>;<span class="token variable">${t1}</span>H==&quot;</span>
+        <span class="token keyword">done</span>
+        <span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[0m&quot;</span>
+
+
+        <span class="token comment">#显示&quot;Score&quot;和&quot;Level&quot;字样</span>
+        <span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[1m&quot;</span>
+        <span class="token variable"><span class="token punctuation">((</span>t1 <span class="token operator">=</span> iLeft <span class="token operator">+</span> iTrayWidth <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token number">7</span><span class="token punctuation">))</span></span>
+        <span class="token variable"><span class="token punctuation">((</span>t2 <span class="token operator">=</span> iTop <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">))</span></span>
+        <span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[3<span class="token variable">${cScore}</span>m<span class="token entity" title="\033">\033</span>[<span class="token variable">${t2}</span>;<span class="token variable">${t1}</span>HScore&quot;</span>
+        <span class="token variable"><span class="token punctuation">((</span>t2 <span class="token operator">=</span> iTop <span class="token operator">+</span> <span class="token number">11</span><span class="token punctuation">))</span></span>
+        <span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[3<span class="token variable">${cScoreValue}</span>m<span class="token entity" title="\033">\033</span>[<span class="token variable">${t2}</span>;<span class="token variable">${t1}</span>H<span class="token variable">${iScore}</span>&quot;</span>
+        <span class="token variable"><span class="token punctuation">((</span>t2 <span class="token operator">=</span> iTop <span class="token operator">+</span> <span class="token number">13</span><span class="token punctuation">))</span></span>
+        <span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[3<span class="token variable">${cScore}</span>m<span class="token entity" title="\033">\033</span>[<span class="token variable">${t2}</span>;<span class="token variable">${t1}</span>HLevel&quot;</span>
+        <span class="token variable"><span class="token punctuation">((</span>t2 <span class="token operator">=</span> iTop <span class="token operator">+</span> <span class="token number">14</span><span class="token punctuation">))</span></span>
+        <span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[3<span class="token variable">${cScoreValue}</span>m<span class="token entity" title="\033">\033</span>[<span class="token variable">${t2}</span>;<span class="token variable">${t1}</span>H<span class="token variable">${iLevel}</span>&quot;</span>
+        <span class="token builtin class-name">echo</span> -ne <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[0m&quot;</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">#退出时显示GameOVer!</span>
+<span class="token keyword">function</span> <span class="token function-name function">ShowExit</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+        <span class="token builtin class-name">local</span> y
+        <span class="token variable"><span class="token punctuation">((</span>y <span class="token operator">=</span> iTrayHeight <span class="token operator">+</span> iTrayTop <span class="token operator">+</span> <span class="token number">3</span><span class="token punctuation">))</span></span>
+        <span class="token builtin class-name">echo</span> -e <span class="token string">&quot;<span class="token entity" title="\033">\033</span>[<span class="token variable">${y}</span>;0HGameOver!<span class="token entity" title="\033">\033</span>[0m&quot;</span>
+        <span class="token builtin class-name">exit</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">#显示用法.</span>
+<span class="token keyword">function</span> <span class="token function-name function">Usage</span>
+<span class="token punctuation">{</span>
+        <span class="token function">cat</span> <span class="token operator">&lt;&lt;</span> <span class="token string">EOF
+Usage: <span class="token variable">$APP_NAME</span>
+Start tetris game.
+
+  -h, --help              display this help and exit
+      --version           output version information and exit
+EOF</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">#游戏主程序在这儿开始.</span>
+<span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$1</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;-h&quot;</span> <span class="token operator">||</span> <span class="token string">&quot;<span class="token variable">$1</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;--help&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+        Usage
+<span class="token keyword">elif</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$1</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;--version&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+        <span class="token builtin class-name">echo</span> <span class="token string">&quot;<span class="token variable">$APP_NAME</span> <span class="token variable">$APP_VERSION</span>&quot;</span>
+<span class="token keyword">elif</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$1</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;--show&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+        <span class="token comment">#当发现具有参数--show时，运行显示函数</span>
+        RunAsDisplayer
+<span class="token keyword">else</span>
+        <span class="token function">bash</span> <span class="token variable">$0</span> --show<span class="token operator">&amp;</span>        <span class="token comment">#以参数--show将本程序再运行一遍</span>
+        RunAsKeyReceiver <span class="token variable">$!</span>        <span class="token comment">#以上一行产生的进程的进程号作为参数</span>
+<span class="token keyword">fi</span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/CodeSnippetsLab/c/" class="prev">
+        C
+      </a></span> <span class="next"><a href="/CodeSnippetsLab/php/">
+        PHP
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/CodeSnippetsLab/assets/js/app.8898c04a.js" defer></script><script src="/CodeSnippetsLab/assets/js/2.8729a11c.js" defer></script><script src="/CodeSnippetsLab/assets/js/18.8105e061.js" defer></script>
+  </body>
+</html>
